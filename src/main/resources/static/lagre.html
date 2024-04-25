@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tidligere biletter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="lagre.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Kino</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Bestill biletter</a></li>
+      <li class="active"><a href="lagre.html">Bilettregister</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h3>Alle biletter:</h3>
+  <div id="biletter"></div>
+  <div id="feil" style="color: red"></div>
+  <button class="btn btn-danger" onclick="slettAlle()">Slett alle tidligere biletter</button>
+
+</div>
+</body>
+</html>
